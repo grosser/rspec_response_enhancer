@@ -42,5 +42,5 @@ So ATM to get enhanced benefits use `have_been_success`...
 Author
 ======
 Michael Grosser  
-grosser.michael@gmail.com
+grosser.michael@gmail.com  
 Hereby placed under public domain, do what you want, just do not hold me accountable...  
