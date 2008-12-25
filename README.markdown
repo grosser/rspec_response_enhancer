@@ -7,6 +7,7 @@ In case of failure the normal `should be_redirect` and its friends are far from 
 
 Solution
 ========
+
     Status should be redirect but was 200(success)
      - rendered addresses/new
      - Flash:
@@ -18,6 +19,7 @@ Install
 =======
 `script/plugin install git://github.com/grosser/rspec_response_enhancer.git`  
 add to `spec/spec_helper.rb`:
+
     Spec::Runner.configure do |config|
       ...
       config.include(RspecResponseEnhancer)
@@ -29,7 +31,8 @@ Example
 Use `render_template` / `redirect_to` like normal.
 
 I chose not to globally overwrite `be_redirect` and `be_success`.  
-So ATM to get enhanced benefits use `have_been_success`...  
+So ATM to get enhanced benefits use `have_been_success`...
+
     response.should have_been_success
     response.should have_been_error
     response.should have_been_missing
