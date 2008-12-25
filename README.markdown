@@ -1,6 +1,6 @@
 Problem
 =======
-In case of failure the normal should be_redirect and its friends are far from helpful...
+In case of failure the normal `should be_redirect` and its friends are far from helpful...
 
     expected redirect? to return true, got false
     expected "new", got nil
@@ -16,7 +16,9 @@ Solution
 
 Install
 =======
-add to spec/spec_helper.rb:
+`script/plugin install git://github.com/grosser/rspec_response_enhancer.git`
+add to `spec/spec_helper.rb`:
+
     Spec::Runner.configure do |config|
       ...
       config.include(RspecResponseEnhancer)
@@ -25,11 +27,13 @@ add to spec/spec_helper.rb:
 
 Example
 =======
-Use render_template / redirect_to like normal
+Use `render_template` / `redirect_to` like normal
+
     response.should redirect_to / render_template as normal
 
-I chose not to globally overwrite be_redirect and be_success...
-So ATM to get enhanced benefits use have_been_success...
+I chose not to globally overwrite `be_redirect` and `be_success`...
+So ATM to get enhanced benefits use `have_been_success`...
+
     response.should have_been_success
     response.should have_been_error
     response.should have_been_missing
