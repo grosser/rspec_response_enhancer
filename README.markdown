@@ -26,7 +26,7 @@ add to `spec/spec_helper.rb`:
       ...
     end
 
-Example
+Usage
 =======
 Use `render_template` / `redirect_to` like normal.
 
@@ -43,4 +43,4 @@ Author
 ======
 Michael Grosser
 grosser.michael@gmail.com
-Hereby placed under public domain, do what you want, just do not hold me accountable...
+Hereby placed under public domain, do what you want, just do not hold me accountable...  
